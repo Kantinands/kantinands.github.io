@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบสอบถาม</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>แบบสอบถามความคิดเห็น</h2>
+    <form action="#" method="post">
+      <div class="question">
+        <label for="q1">1. คุณพอใจกับผลิตภัณฑ์นี้หรือไม่?</label>
+        <select id="q1" name="q1">
+          <option value="ดีมาก">ดีมาก</option>
+          <option value="ดี">ดี</option>
+          <option value="พอใช้">พอใช้</option>
+          <option value="ไม่พอใจ">ไม่พอใจ</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label for="q2">2. คุณใช้ผลิตภัณฑ์นี้บ่อยแค่ไหน?</label>
+        <select id="q2" name="q2">
+          <option value="ทุกวัน">ทุกวัน</option>
+          <option value="สัปดาห์ละครั้ง">สัปดาห์ละครั้ง</option>
+          <option value="เดือนละครั้ง">เดือนละครั้ง</option>
+          <option value="ไม่เคยใช้">ไม่เคยใช้</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label for="q3">3. คุณคิดว่าราคาของผลิตภัณฑ์เหมาะสมหรือไม่?</label>
+        <select id="q3" name="q3">
+          <option value="เหมาะสม">เหมาะสม</option>
+          <option value="แพงไป">แพงไป</option>
+          <option value="ราคาถูก">ราคาถูก</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label for="q4">4. คุณจะบอกต่อผลิตภัณฑ์นี้ให้กับเพื่อนหรือไม่?</label>
+        <select id="q4" name="q4">
+          <option value="จะบอกต่อ">จะบอกต่อ</option>
+          <option value="ไม่บอกต่อ">ไม่บอกต่อ</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label for="q5">5. คุณต้องการให้ผลิตภัณฑ์นี้มีการปรับปรุงในด้านใด?</label>
+        <input type="text" id="q5" name="q5" placeholder="กรุณาใส่ความคิดเห็น">
+      </div>
+
+      <button type="submit">ส่งคำตอบ</button>
+    </form>
+  </div>
+
+</body>
+</html>

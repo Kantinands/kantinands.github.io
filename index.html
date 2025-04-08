@@ -1,105 +1,101 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>แบบสอบถาม</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      padding: 20px;
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; }
+    nav {
+      background-color: #2196F3;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .container {
       max-width: 600px;
-      margin: 0 auto;
+      margin: 30px auto;
       background-color: white;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h2 {
-      text-align: center;
-      color: #333;
-    }
-    .question {
-      margin-bottom: 15px;
-    }
-    label {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
+    h2 { text-align: center; }
+    .question { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; }
     input[type="text"], select {
-      width: 100%;
-      padding: 8px;
-      margin: 5px 0;
-      border-radius: 4px;
-      border: 1px solid #ccc;
+      width: 100%; padding: 8px;
+      border: 1px solid #ccc; border-radius: 4px;
     }
     button {
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
+      width: 100%; padding: 10px;
+      background-color: #2196F3; color: white;
+      border: none; border-radius: 4px;
       cursor: pointer;
+      font-size: 16px;
     }
-    button:hover {
-      background-color: #45a049;
-    }
+    button:hover { background-color: #1976D2; }
   </style>
 </head>
 <body>
 
+  <!-- 🧭 แถบเมนู -->
+  <nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="thx.html">ขอบคุณ</a>
+  </nav>
+
   <div class="container">
     <h2>แบบสอบถามความคิดเห็น</h2>
-    <form action="#" method="post">
+    <form action="contact.html" method="get">
       <div class="question">
-        <label for="q1">1. คุณพอใจกับผลิตภัณฑ์นี้หรือไม่?</label>
-        <select id="q1" name="q1">
+        <label>1. คุณพอใจกับผลิตภัณฑ์นี้หรือไม่?</label>
+        <select name="q1">
           <option value="ดีมาก">ดีมาก</option>
           <option value="ดี">ดี</option>
           <option value="พอใช้">พอใช้</option>
           <option value="ไม่พอใจ">ไม่พอใจ</option>
         </select>
       </div>
-
       <div class="question">
-        <label for="q2">2. คุณใช้ผลิตภัณฑ์นี้บ่อยแค่ไหน?</label>
-        <select id="q2" name="q2">
+        <label>2. คุณใช้ผลิตภัณฑ์นี้บ่อยแค่ไหน?</label>
+        <select name="q2">
           <option value="ทุกวัน">ทุกวัน</option>
           <option value="สัปดาห์ละครั้ง">สัปดาห์ละครั้ง</option>
           <option value="เดือนละครั้ง">เดือนละครั้ง</option>
           <option value="ไม่เคยใช้">ไม่เคยใช้</option>
         </select>
       </div>
-
       <div class="question">
-        <label for="q3">3. คุณคิดว่าราคาของผลิตภัณฑ์เหมาะสมหรือไม่?</label>
-        <select id="q3" name="q3">
+        <label>3. คุณคิดว่าราคาของผลิตภัณฑ์เหมาะสมหรือไม่?</label>
+        <select name="q3">
           <option value="เหมาะสม">เหมาะสม</option>
           <option value="แพงไป">แพงไป</option>
           <option value="ราคาถูก">ราคาถูก</option>
         </select>
       </div>
-
       <div class="question">
-        <label for="q4">4. คุณจะบอกต่อผลิตภัณฑ์นี้ให้กับเพื่อนหรือไม่?</label>
-        <select id="q4" name="q4">
+        <label>4. คุณจะบอกต่อผลิตภัณฑ์นี้ให้กับเพื่อนหรือไม่?</label>
+        <select name="q4">
           <option value="จะบอกต่อ">จะบอกต่อ</option>
           <option value="ไม่บอกต่อ">ไม่บอกต่อ</option>
         </select>
       </div>
-
       <div class="question">
-        <label for="q5">5. คุณต้องการให้ผลิตภัณฑ์นี้มีการปรับปรุงในด้านใด?</label>
-        <input type="text" id="q5" name="q5" placeholder="กรุณาใส่ความคิดเห็น">
+        <label>5. คุณต้องการให้ปรับปรุงด้านใด?</label>
+        <input type="text" name="q5" placeholder="กรุณาใส่ความคิดเห็น">
       </div>
 
-      <button type="submit">ส่งคำตอบ</button>
+      <button type="submit">ถัดไป</button>
     </form>
   </div>
 
